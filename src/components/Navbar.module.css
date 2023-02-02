@@ -6,7 +6,7 @@
     box-sizing: border-box;
   }
 
-  .navbar ul {
+.navbar ul {
     position: relative;
     margin: 0 auto;
     display: flex;
@@ -15,11 +15,12 @@
     max-width: 80%;
   }
 
-  .links {
+.links {
     display: flex;
+    align-items: center;
   }
-  
-  .links a {
-    margin: 10px 7px;
+
+.lists {
+    margin-right: 20px;
   }
   

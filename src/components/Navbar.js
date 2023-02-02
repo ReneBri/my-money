@@ -28,7 +28,7 @@ export default function Navbar() {
               </>}
             {user && 
               <>
-                <li>Hi {user.displayName}</li>
+                <li className={styles.lists}>Hi {user.displayName}</li>
                 <li><button className="btn" onClick={logout}>Logout</button></li>
               </>}
           </div>

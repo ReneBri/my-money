@@ -1,6 +1,9 @@
+// hooks
 import { useEffect, useState } from 'react'
-import { projectAuth } from '../config/config'
 import { useAuthContext } from './useAuthContext'
+
+//config from firebase
+import { projectAuth } from '../config/config'
 
 export const useLogout = () => {
 
