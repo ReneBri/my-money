@@ -16,8 +16,10 @@ console.log(response)
         {transactions.map((transaction) => (
             <li key={ transaction.id }>
                 <p className={ styles.name }>{transaction.name}</p>
-                <p className={ styles.readableCA }>{transaction.readableCreatedAt}</p>
-                <p className={ styles.amount }>${transaction.amount}</p>
+                <div className={ styles['time-amount-wrapper']}>
+                  <p className={ styles.amount }>${transaction.amount}</p>
+                  <p className={ styles.readableCA }>{transaction.readableCreatedAt}</p>
+                </div>
                 <button onClick={() => deleteDocument(transaction.id)}>x</button>
             </li>
         ))}

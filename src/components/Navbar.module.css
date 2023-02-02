@@ -20,6 +20,14 @@
     align-items: center;
   }
 
+  .links a {
+    padding: 10px 7px;
+  }
+
+.links a:visited {
+    color: black;
+  }
+
 .lists {
     margin-right: 20px;
   }
