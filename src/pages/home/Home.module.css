@@ -156,4 +156,7 @@
   .transactions .amount{
     margin-left: 0;
   }
+  .sidebar{
+    width: 80%;
+  }
 }

@@ -20,8 +20,9 @@
     align-items: center;
   }
 
-  .links a {
+.links a {
     padding: 10px 7px;
+    color: black;
   }
 
 .links a:visited {
