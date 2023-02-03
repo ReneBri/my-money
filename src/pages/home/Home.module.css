@@ -1,16 +1,24 @@
 .container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  /* display: grid;
+  grid-template-columns: 2fr 1fr; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
   max-width: 960px;
-  margin: 60px auto;
+  max-width: 901px;
+  margin: 10px auto;
 }
 
 .content {
   padding-right: 30px;
+  width: 60%;
+  margin: auto;
 }
 
 .sidebar {
   padding-left: 30px;
+  width: 30%;
+  margin: auto;
 }
 
 .sidebar form {
@@ -70,6 +78,7 @@
   box-shadow: 3px 3px 5px rgba(50,50,50,0.1);
   padding: 20px;
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -80,6 +89,7 @@
 .transactions .name {
   color: #777;
   font-size: 1.4em;
+  max-width: 300px;
 }
 
 .transactions .amount {
@@ -115,4 +125,35 @@
   justify-content: center;
   align-items: center;
   margin-right: 40px;
+}
+
+@media only screen and (max-width: 900px) {
+  .content {
+    width: 80%;
+    min-width: 200px;
+    padding-right: 0;
+  }
+  
+  .sidebar {
+    width: 50%;
+    min-width: 200px;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .transactions li {
+    text-align: center;
+    justify-content: center;
+  }
+  .readableCA {
+    padding: 0;
+  }
+  .time-amount-wrapper{
+    margin-right: 0;
+  }
+  .transactions .amount{
+    margin-left: 0;
+  }
 }

@@ -27,3 +27,15 @@ ul {
   background: #1f9751;
   color: #fff;
 }
+
+@media only screen and (max-width: 430px) {
+  .body {
+    font-size: .9em;
+  }
+  .btn {
+    font-size: .9em;
+  }
+  span, p, li {
+    font-size: .9em;
+  }
+}

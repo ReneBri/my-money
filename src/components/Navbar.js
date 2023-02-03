@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className={styles.navbar}>
         <ul>
           <div className={styles.title}>
-            <li>My Money</li>
+            <li><h3>My Money</h3></li>
           </div>
           <div className={styles.links}>
             {!user &&
